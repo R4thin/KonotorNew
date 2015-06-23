@@ -1,0 +1,125 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"KonotorPhoneGap\"><param name=\"android-package\" value=\"com.demach.konotor.KonotorPhoneGap\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest": [
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.INTERNET\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.RECORD_AUDIO\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"com.google.android.c2dm.permission.RECEIVE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\"android.permission.WAKE_LOCK\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<uses-permission android:name=\".permission.C2D_MESSAGE\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<permission android:name=\".permission.C2D_MESSAGE\" android:protectionLevel=\"signature\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/manifest/application": [
+                        {
+                            "xml": "<activity android:name=\"com.demach.konotor.KonotorFeedbackActivity\" android:screenOrientation=\"portrait\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<activity android:name=\"com.demach.konotor.KonotorPhotoViewActivity\" android:screenOrientation=\"portrait\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.demach.konotor.service.KonotorService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.demach.konotor.service.KonotorBacklogService\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.demach.konotor.KonotorAlarmReceiver\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.demach.konotor.NetworkStateReceiver\"><intent-filter><action android:name=\"android.net.conn.CONNECTIVITY_CHANGE\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<receiver android:name=\"com.demach.konotor.CordovaGCMBroadcastReceiver\" android:permission=\"com.google.android.c2dm.permission.SEND\"><intent-filter><action android:name=\"com.google.android.c2dm.intent.RECEIVE\" /><action android:name=\"com.google.android.c2dm.intent.REGISTRATION\" /><category android:name=\"io.cordova.hellocordova\" /></intent-filter></receiver>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<service android:name=\"com.demach.konotor.GCMIntentService\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "res/values/konotor.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<string name=\"KONOTOR_APP_KEY\">21edfa80-ec1b-4df2-b373-3a8fb1e2019f</string>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<string name=\"KONOTOR_APP_ID\">f9238745-18c7-4037-8dao-a23dae7f48a6</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        },
+        "cordova-plugin-konotor": {
+            "APP_ID": "f9238745-18c7-4037-8dao-a23dae7f48a6",
+            "APP_KEY": "21edfa80-ec1b-4df2-b373-3a8fb1e2019f",
+            "PACKAGE_NAME": "io.cordova.hellocordova"
+        }
+    },
+    "dependent_plugins": {}
+}

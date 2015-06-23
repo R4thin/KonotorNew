@@ -1,0 +1,21 @@
+{
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-konotor": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-konotor"
+        },
+        "is_top_level": true,
+        "variables": {
+            "APP_ID": "f9238745-18c7-4037-8dao-a23dae7f48a6",
+            "APP_KEY": "21edfa80-ec1b-4df2-b373-3a8fb1e2019f"
+        }
+    }
+}
